@@ -64,9 +64,7 @@
                 if (stateData) {
                   document.getElementById("result").innerHTML = `
             <h5>Tax Rates for ${state}:</h5>
-            <p><strong>State Rate:</strong> ${stateData.state_rate}%</p>
-            <p><strong>Average Local Rate:</strong> ${stateData.average_local_rate}%</p>
-            <p><strong>Combined Rate:</strong> ${stateData.combined_rate}%</p>
+            <p><strong>State Rate:</strong> ${stateData}%</p>
         `;
                 } else {
                   document.getElementById(

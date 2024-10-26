@@ -22,7 +22,7 @@ def get_tax_rates(request):
     state = request.GET.get('state')
 
     if state:
-        state_data = data.get(state)
+        state_data = data[state]['combined_rate']
         if state_data:
             return JsonResponse({state: state_data})
         else:
