@@ -19,4 +19,13 @@ def get_tax_rates(request):
     with open("core/data/tax.json", 'r') as f:
         data = json.load(f)
 
-    return JsonResponse(data)
+    state = request.GET.get('state')
+
+    if state:
+        state_data = data.get(state)
+        if state_data:
+            return JsonResponse({state: state_data})
+        else:
+            return JsonResponse({"error": "There is no data on this state, or it's not an American state"})
+    else:
+        return JsonResponse({"error": "This state doesn't exist, or you spelled it wrongly. Please check."})
