@@ -12,10 +12,10 @@ pip install requirements.txt
 # Endpoints.
 This is a simple API with one endpoint. It fetches tax rate data from a .json file that is updated daily.
 
-| Method | Route                 | Status       | Purpose                     |
-|--------|-----------------------|--------------|-----------------------------|
-| GET    | /                     | Not Protected| Home page                   |
-| GET    | /api/taxrates?state={state}          | Get taxrates by state       |
+| Method | Route                 |Purpose                                     |
+|--------|-----------------------|--------------------------------------------|
+| GET    | /                      Home page                                   |
+| GET    | /api/taxrates?state={state}| Get taxrates by state                 |
 
 # Parameters
 There is one required parameter which is ```state```.
