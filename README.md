@@ -1,6 +1,14 @@
 # tax-rates-api
 This is a repository for the Sales Tax API.
 
+### Website URL
+**Website URL**: [tax-rates-api.onrender.com](https://tax-rates-api.onrender.com)
+
+### Features
+- Retrieve state-specific sales tax rates.
+- Access average local and combined rates.
+- Lightweight and easy to integrate into any project requiring U.S. tax information.
+
 # Installing packages.
 
 Install your packages and modules required in this project by running
