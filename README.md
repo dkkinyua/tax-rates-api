@@ -14,7 +14,7 @@ This is a simple API with one endpoint. It fetches tax rate data from a .json fi
 
 | Method | Route                 |Purpose                                     |
 |--------|-----------------------|--------------------------------------------|
-| GET    | /                      Home page                                   |
+| GET    | /                     |       Home page                             |
 | GET    | /api/taxrates?state={state}| Get taxrates by state                 |
 
 # Parameters
