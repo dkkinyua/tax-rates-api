@@ -66,9 +66,7 @@ Parameters for ```@ratelimit```:
 **Areas to work on later:**
 This API has been used for a project of mine becuase I didn't want to pay $15 for a sales tax API. There is a lot of things to be worked on. They are:
     1. **Authentication**: Users should be authenticated or logged in so as to send requests to the server
-
     2. **Subscriptions**: Adding a subscription feature to bill users monthly for using the API for their projects. A small charge will do, probably $2.99/month or $3.99/month.
-
     3. **Security measures**: Adding secure connections such as HTTPS to prevent attacks.
 
 **Feel free to contact me if you would want to collaborate on this project!**
