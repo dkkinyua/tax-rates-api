@@ -54,19 +54,21 @@ def get_tax_rates(request):
 ```
 
 Parameters for ```@ratelimit```:
-    i. ```key```: This param is used to determine what will identify the user, in this case, I used the user's IP address.
-    ii. ```rate```: The max amount of requests allowed per user per minute
-    iii. ```block=True```: This block the user's IP after exceeding 20 requests per minute, and a ```429 Too Many Requests``` error will appear.
+    1. ```key```: This param is used to determine what will identify the user, in this case, I used the user's IP address.
+    2. ```rate```: The max amount of requests allowed per user per minute
+    3. ```block=True```: This block the user's IP after exceeding 20 requests per minute, and a ```429 Too Many Requests``` error will appear.
 
 **Errors:**
-    i.  ```429 Too Many Requests```: This error appears when the user has exceeded 20 requests per minute
-    ii. ```500 Internal Server Error```: There is an error with the server, might be a minor maintenance.
-    iii. ```400 Bad Request```: Shows that the user might have used the wrong params, entered an invalid state or the state doesn't exist.
+    1.  ```429 Too Many Requests```: This error appears when the user has exceeded 20 requests per minute
+    2. ```500 Internal Server Error```: There is an error with the server, might be a minor maintenance.
+    3. ```400 Bad Request```: Shows that the user might have used the wrong params, entered an invalid state or the state doesn't exist.
 
 **Areas to work on later:**
 This API has been used for a project of mine becuase I didn't want to pay $15 for a sales tax API. There is a lot of things to be worked on. They are:
-    i. **Authentication**: Users should be authenticated or logged in so as to send requests to the server
-    ii. **Subscriptions**: Adding a subscription feature to bill users monthly for using the API for their projects. A small charge will do, probably $2.99/month or $3.99/month.
-    iii. **Security measures**: Adding secure connections such as HTTPS to prevent attacks.
+    1. **Authentication**: Users should be authenticated or logged in so as to send requests to the server
+
+    2. **Subscriptions**: Adding a subscription feature to bill users monthly for using the API for their projects. A small charge will do, probably $2.99/month or $3.99/month.
+
+    3. **Security measures**: Adding secure connections such as HTTPS to prevent attacks.
 
 **Feel free to contact me if you would want to collaborate on this project!**
